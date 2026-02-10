@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#B537F2;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#EC4899;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3B82F6;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background Circle -->
+  <circle cx="50" cy="50" r="48" fill="url(#gradient)" filter="url(#glow)"/>
+  
+  <!-- Sparkles Icon -->
+  <g transform="translate(50, 50)" fill="white">
+    <!-- Center star -->
+    <path d="M 0,-15 L 3,-3 L 15,0 L 3,3 L 0,15 L -3,3 L -15,0 L -3,-3 Z"/>
+    <!-- Top right sparkle -->
+    <path d="M 12,-18 L 13.5,-13.5 L 18,-12 L 13.5,-10.5 L 12,-6 L 10.5,-10.5 L 6,-12 L 10.5,-13.5 Z" opacity="0.7" transform="scale(0.4)"/>
+    <!-- Bottom left sparkle -->
+    <path d="M -12,18 L -10.5,13.5 L -6,12 L -10.5,10.5 L -12,6 L -13.5,10.5 L -18,12 L -13.5,13.5 Z" opacity="0.7" transform="scale(0.4)"/>
+    <!-- Top left small -->
+    <circle cx="-18" cy="-8" r="2" opacity="0.6"/>
+    <!-- Bottom right small -->
+    <circle cx="18" cy="8" r="2" opacity="0.6"/>
+  </g>
+</svg>

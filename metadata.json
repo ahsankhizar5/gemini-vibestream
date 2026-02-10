@@ -1,0 +1,5 @@
+{
+  "name": "VibeStream: AI Video Viral Hunter",
+  "description": "An AI-powered video analysis tool that identifies the most engaging and viral segments of your videos using Gemini 3 Flash and Gemini 3 Pro Vision for high-end thumbnails.",
+  "requestFramePermissions": []
+}
