@@ -129,19 +129,16 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onEnterApp, onShowcase
 
             {/* Spline 3D Interactive Model */}
             <div className="mb-12 w-full flex justify-center">
-              <div className="relative w-full" style={{ maxWidth: '900px', aspectRatio: '16/9' }}>
-                <iframe 
-                  src='https://my.spline.design/untitled-355705e7-5f04-4051-93d5-5007f7034ada/' 
-                  frameBorder='0' 
-                  width='100%' 
-                  height='100%'
-                  className="rounded-3xl shadow-2xl absolute inset-0"
-                  style={{ border: 'none' }}
-                  title="Interactive 3D Model"
-                  loading="eager"
-                  allowFullScreen
-                />
-              </div>
+              <iframe 
+                src='https://my.spline.design/untitled-645f3da4-01cc-4ce7-b99f-06a003dd10ad/' 
+                frameBorder='0' 
+                width='100%' 
+                height='600px'
+                className="rounded-3xl shadow-2xl"
+                style={{ maxWidth: '900px', border: 'none', display: 'block', margin: '0 auto' }}
+                title="Interactive 3D Model"
+                allowFullScreen
+              />
             </div>
 
             <h1 className="headline hero-headline gradient-text mb-6" style={{textShadow: '0 0 80px rgba(181, 55, 242, 0.5)'}}>
